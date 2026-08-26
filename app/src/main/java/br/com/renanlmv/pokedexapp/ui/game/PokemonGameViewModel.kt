@@ -55,7 +55,9 @@ class PokemonGameViewModel : ViewModel() {
     }
 
     fun checkAnswer() {
-
+        // elvis expression ?:
+        // indica se um valor é nulo ou não
+        // A?:B retorna A se A não for nulo e B se A for nulo
         val pokemon = _uiState.value.pokemon ?: return
 
         // remove espaços do começo e final e deixa o guess em letras minúsculas
